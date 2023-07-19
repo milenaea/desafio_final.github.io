@@ -3,6 +3,7 @@ function changeText() {
     var header = document.getElementById("container");
     var footer = document.getElementById("container_footer");
     var color_base = window.getComputedStyle(footer).backgroundColor;
+    var principal_img = document.getElementById("principal_img");
 
     var color_body = 'white'
     var color_body_text = 'white'
@@ -21,4 +22,5 @@ function changeText() {
     footer.style.backgroundColor = color_base;
     body.style.backgroundColor = color_body;
     body.style.color = color_body_text;
+    principal_img.style.border = "3px solid " + color_base 
   }
